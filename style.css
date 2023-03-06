@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Source Sans Pro, sans-serif
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(175deg, #223147 0%, #093c87 100%);
+}
+
+.plashka{
+    font-size: 25px;
+    width: 70vw;
+    max-width: 30em;
+    padding: 2.2em 3em;
+    background-color: #2e7ae8; 
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 10%;
+    left: 50%;
+    right: 50%;
+    border-radius: 0.6em;
+    box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0,2);
+    animation: top_anim 3s cubic-bezier(0.33, 1, 0.68, 1) 50ms 1 reverse none;
+}
+
+@keyframes top_anim {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+
+.container{
+    font-size: 20px;
+    width: 200vw;
+    max-width: 35em;
+    margin-top: -12cm;
+    text-align: center;
+    animation: cont_anim 5s ease 0s 1 normal forwards;
+    position: absolute;
+
+}
+
+ @keyframes cont_anim {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+} 
+
+.container1 {
+    font-size: 20px;
+    width: 200vw;
+    max-width: 35em;
+    margin-top: -7cm;
+    text-align: center;
+    animation: cont1_anim 5s ease 0s 1 normal forwards;
+    padding-top: 0.4cm;
+    transform: translate(0%, 0%);
+    position: relative;
+}
+
+ @keyframes cont1_anim {
+	0% {
+		opacity: 0;
+		transform: translateX(500px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(50%);
+	}
+} 
+
+
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Ropa Sans', sans-serif;
+  }
+
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+  .contacts {
+    font-size: 20px;
+    width: 200vw;
+    max-width: 35em;
+    margin-top: 40em;
+    text-align: center;
+    padding-top: 0.4cm;
+    transform: translate(-50%, -50%);
+    animation: top_animka 15s cubic-bezier(0.33, 1, 0.68, 1) 50ms 1 normal none;
+  }
+
+  @keyframes top_animka {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
